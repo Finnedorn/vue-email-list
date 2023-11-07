@@ -14,17 +14,19 @@
 
 <body>
     <div id="app">
-        <a href="./bonus/index-bonus.html">
-            bonus
-        </a>
-        <a href="./bonus-bonus/index-bonus-bonus.html">
-            bonus-bonus
-        </a>
         <ul v-if="rngMails.length > 9">
-            <li v-for="mail in rngMails">{{mail}}</li>
+            <li v-for=" in rngMails">{{}}</li>
         </ul>
+        <input type="text" v-model="product_type">
+        <input type="text" v-model="product_category">
+        <input type="text" v-model="product_tags">
+        <input type="text" v-model="brand">
+        <input type="text" v-model="price_greater_than">
+        <input type="text" v-model="price_less_than">
+        <input type="text" v-model="rating_greater_than">
+        <input type="text" v-model="rating_less_than">
     </div>
-    <script src="js/script.js"></script>
+    <script src="js-bonus-bonus/script-bonus-bonus.js"></script>
 </body>
 
 </html>
