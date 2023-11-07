@@ -15,7 +15,20 @@
 <body>
     <div id="app">
         <ul v-if="ArrayObjs.length > 99">
-            <li v-for="objs in ArrayObjs">{{objs}}</li>
+            <li v-for="obj in ArrayObjs">
+                <h5>
+                    body: {{obj.body}}
+                </h5>
+                <h5>
+                    id: {{obj.id}}
+                </h5>
+                <h5>
+                    title: {{obj.title}}
+                </h5>
+                <h5>
+                    userId: {{obj.userId}}
+                </h5>
+            </li>
         </ul>
     </div>
     <script src="./js-bonus/script-bonus.js"></script>

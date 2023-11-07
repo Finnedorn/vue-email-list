@@ -9,13 +9,13 @@ const miaApp = createApp({
     methods: {
     },
     mounted() {
-        for(let i = 0; i < 10; i++) {
+        for(let i = 0; i < 100; i++) {
             axios.get('https://jsonplaceholder.typicode.com/posts').then((resp) =>{
                 let obj = {
-                    body: resp.data.body,
-                    id: resp.data.id,
-                    title: resp.data.title,
-                    userId: resp.data.userId
+                    body: resp.data[i].body,
+                    id: resp.data[i].id,
+                    title: resp.data[i].title,
+                    userId: resp.data[i].userId
                 };
                 console.log(obj);
                 this.ArrayObjs.push(obj);
